@@ -1,0 +1,42 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: ${{ github.ref != 'refs/heads/main' }}
+
+jobs:
+  ci:
+    name: ci
+    runs-on: macos-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Build StretchTheMac.app and dockctl
+        run: |
+          set -euo pipefail
+          make clean
+          make build
+          ./dist/dockctl --help
+          ./dist/StretchTheMac.app/Contents/MacOS/StretchTheMac --selftest-snap
+
+      - name: Validate scripts and property lists
+        run: |
+          set -euo pipefail
+          zsh -n build.sh
+          zsh -n build_app.sh
+          python3 -m py_compile lenovo_40an_vmm5322_split.py
+          python3 lenovo_40an_vmm5322_split.py --help
+          plutil -lint dist/StretchTheMac.app/Contents/Info.plist
