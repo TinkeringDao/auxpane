@@ -1,8 +1,10 @@
-# Stretch the Mac
+# auxpane
 
+[![CI](https://github.com/TinkeringDao/auxpane/actions/workflows/ci.yml/badge.svg)](https://github.com/TinkeringDao/auxpane/actions/workflows/ci.yml)
+[![Security](https://github.com/TinkeringDao/auxpane/actions/workflows/security.yml/badge.svg)](https://github.com/TinkeringDao/auxpane/actions/workflows/security.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
-macOS DisplayPort AUX (`IODPDevice` DPCD Remote Control) ViewXpand controller and bezel-aware `3840x1080` window snapper for the Lenovo ThinkPad Thunderbolt 3 Dock Gen 2 (`Type 40AN`, Synaptics `VMM5322` MST hub).
+Native macOS DisplayPort AUX (`IODPDevice` DPCD Remote Control) volatile-SRAM ViewXpand controller and bezel-aware `3840x1080` window manager for Synaptics VMM5322 / Lenovo ThinkPad TB3 Dock Gen 2 (`40AN`).
 
 ## Problem & Hardware Mechanism
 
@@ -38,6 +40,9 @@ In native `3840x1080` ViewXpand mode, macOS sees one `32:9` `NSScreen`, so maxim
 Requires macOS 14.0+ and Xcode Command Line Tools (`swift` 6.0+):
 
 ```bash
+git clone https://github.com/TinkeringDao/auxpane.git
+cd auxpane
+
 # Build ./dist/StretchTheMac.app and ./dist/dockctl
 make
 
