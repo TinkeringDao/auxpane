@@ -2,7 +2,7 @@
 
 ## 1. Independent Interoperability Project & Non-Affiliation (Trademark Notice)
 
-**`Stretch the Mac` (`stretch-the-mac`) — Unofficial macOS Synaptics `VMM5322` ViewXpand DisplayPort AUX Controller & Bezel-Aware Dual-Monitor Window Manager for Lenovo ThinkPad Thunderbolt 3 Dock Gen 2 (`40AN`)** is an **independent, non-commercial, community-developed free and open-source software project** created solely to enable desktop host interoperability and dual-monitor display configuration on macOS (where native DisplayPort Multi-Stream Transport is not provided by the operating system).
+**`auxpane` — Unofficial macOS Synaptics `VMM5322` ViewXpand DisplayPort AUX Controller & Bezel-Aware Dual-Monitor Window Manager for Lenovo ThinkPad Thunderbolt 3 Dock Gen 2 (`40AN`)** is an **independent, non-commercial, community-developed free and open-source software project** created solely to enable desktop host interoperability and dual-monitor display configuration on macOS (where native DisplayPort Multi-Stream Transport is not provided by the operating system).
 
 - **No Affiliation or Endorsement:** This project is **not affiliated with, authorized by, sponsored by, or endorsed by Lenovo Group Limited, Synaptics Incorporated, Dell Inc., Intel Corporation, or Apple Inc.**
 - **Indication of Intended Purpose & Nominative Fair Use:**
@@ -26,7 +26,7 @@ All source code and protocol documentation in this repository were developed ind
 2. **Right to Observe, Study, and Test (`Article 5(3) of Directive 2009/24/EC`):**
    - Permits the lawful owner or user of a device or computer program to observe, study, and test its functioning without prior authorization in order to determine the underlying ideas, principles, and register transitions during normal use.
 3. **Mandatory Right of Interoperability (`Article 6 of Directive 2009/24/EC`):**
-   - Permits independent analysis necessary to achieve the **interoperability** of an independently created computer program (`Stretch the Mac` for macOS) with existing hardware and software where interface specifications were not previously published.
+   - Permits independent analysis necessary to achieve the **interoperability** of an independently created computer program (`auxpane` for macOS) with existing hardware and software where interface specifications were not previously published.
 4. **Statutory Nullity of Contrary EULA Provisions (`Article 8 of Directive 2009/24/EC`):**
    - Under mandatory European Union law (`Article 8 of Directive 2009/24/EC`), any contractual or End-User License Agreement (EULA) clauses purporting to waive or restrict rights under `Article 5(3)` or `Article 6 of Directive 2009/24/EC` are **statutorily null and void**.
 5. **Lawful Hardware Reverse Engineering (`Article 3(1)(b) of Directive (EU) 2016/943`):**
